@@ -12,7 +12,7 @@
 double LuckyGauntlet::hit(double armor)
 {
 	double damage;
-	int outcome = rand() % 3;
+	int outcome = rand() % 3;		//finds random outcome of 3 possible choices
 	if (outcome == 0)
 	{ //worst outcome - hitpoints become 1
 		damage = 1 - armor;

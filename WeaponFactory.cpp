@@ -29,15 +29,18 @@ Weapon * WeaponFactory::getWeapon(std::string name) {
         return new CommonSpear();
     }
 
+    //simple hammer call
     if (name.compare("hammer") == 0) {
 	return new SimpleHammer();
     }
 
+    //crazy random sword call
     if (name.compare("crazySword") == 0) {
-	int hp = (rand() % 94) + 7;
+	int hp = (rand() % 94) + 7;		//uses random amount 7-100 as given hitpoints
 	return new CrazyRandomSword(hp);
     }
 
+    //lucky gauntlet call
     if (name.compare("gauntlet") == 0) {
 	return new LuckyGauntlet();
     }

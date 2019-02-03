@@ -19,7 +19,7 @@
 class LuckyGauntlet : public Weapon {
 public:
 
-        LuckyGauntlet() : Weapon("Lucky Gauntlet", 50) //Calls Weapon(name, hp) with lucky gauntlet and given hp
+        LuckyGauntlet() : Weapon("Lucky Gauntlet", 50.0) //Calls Weapon(name, hp) with lucky gauntlet and 50.0
         {}
 
         virtual ~LuckyGauntlet() {};
