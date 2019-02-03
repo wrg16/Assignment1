@@ -1,0 +1,67 @@
+a) $ git push
+Enumerating objects: 11, done.
+Counting objects: 100% (10/10), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (7/7), 940 bytes | 470.00 KiB/s, done.
+Total 7 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+To https://github.com/wrg16/Assignment1.git
+   3d373c9..210d1c7  master -> master
+
+b) 5 commits have been made so far. The command I used was
+"git shortlog" and added the number of commits made by myself and Javier.
+
+c) The last change to the .gitignore file was Thursday January 10, 2019.
+The command I used was "git log --follow .gitignore" to see the history
+of the file changes and subsequently the most recent one.
+
+d) Because branches in git are lightweight, branching makes dividing up work
+in general, and specifically logically, easier. Second, branching allows
+coders to keep a clean history of previous code, which could be usefule down
+the road in a project.
+
+e) Git log shows the previous commit logs. Git status shows the status of the
+working tree, AKA: the changes that may or may not be ready to be committed.
+
+f) The command I would use is 'git log --follow Weapon.h', assuming Weapon.h
+is in the current working directory. Otherwise, the pathname would change.
+
+g) The command I would use is 'git log --grep="file"'.
+
+h)
+  I) Inheritance revolves around the structure where classes are contained 
+     within other classes. In this situation, the classes that contain other 
+     classes are called 'parent' classes and the classes within others are 'child' 
+     classes. Inhertiance is the term used for the child classes being able to access
+     the functions and variables of their parent classes as well as their own, while
+     the parent class is unable to use those of the child, but still its own.
+ II) Polymorphism, in programming, is simply the ability of function to perform
+     in a certain way depending on the data type of the caller. This can be related
+     to inheritance, where the parent class can have a similarly identifiable function
+     to its child class, in which the function call will perform differently depending
+     on which child class is being called.
+III) Encapsulation is simply the idea of creating a class in programming. Typically,
+     the class will have variables and functions, where the variables are kept private
+     from the user and any access to them are done through the functions, which would
+     likely be available to the user in the "public" section of the class.
+
+i) There are a few differences between the 'Dictator and Lieutenants' (DL) workflow and the
+'Integration Management' (IM) workflow. In the IM workflow, developers push their commits to
+their own separate, public repositories, where the integration manager takes all of those changes and
+puts them together in the central repository. In the DL workflow, instead of pushing commits to
+their own public repository, developers will push commits to multiple 'lieutenants', where each
+lieutenant only handles some of the developers, not all. Furthermore, the 'dictator' handles all
+of the changes the 'lieutenants' made. Basically, the difference in the workflows is that there
+is an extra step in the DL workflow where instead of having their pushes pulled from public repositories,
+the developers send directly to the lieutenants, and after that is where the dictator (integration manager)
+handles all of the cumulated changes.
+
+j) The reason 100 developers would more benefit from the DL workflow is simple. In a centralized workflow,
+the developer would have to pull any changes made to the central repository. Having 100 developers would
+amass countless changes being made to that repository, so developers would likely be spending more time
+pulling changes and figuring out the new code than doing productive work. The DL workflow would benefit
+the larger amount of developers because certain 'lieutenants' wouldn't have to handle making fixes
+and pulls to all 100 developers. Instead, each 'lieutenant' would handle only a handful of the developers,
+then push those complete changes to the dictator. There, the dictator would have a more complete, and 
+bug-free, mass of code to merge and push to the central repository.
