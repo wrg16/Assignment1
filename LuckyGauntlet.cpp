@@ -22,7 +22,7 @@ double LuckyGauntlet::hit(double armor)
 	}
 	else
 	{ //luckiest outcome - hitpoints double and random value with max of armor is ignored
-		damage = (2 * hitpoints) - (armor - (rand() % armor));
+		damage = (2 * hitpoints) - (armor - floor((rand() % armor)));
 	}
 
         if (damage < 0)
