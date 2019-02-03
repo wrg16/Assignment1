@@ -7,6 +7,7 @@
 
 #include "LuckyGauntlet.h"
 #include <cstdlib>
+#include <cmath>
 
 double LuckyGauntlet::hit(double armor)
 {
