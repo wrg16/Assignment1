@@ -39,6 +39,25 @@ int main(int argc, char** argv) {
     simulateWeapon(weapon, armor);
     delete(weapon);
 
+    //test case for simple hammer
+    weapon = WeaponFactory::getInstance()->getWeapon("hammer");
+    simulateWeapon(weapon, armor);
+    delete(weapon);
+
+    //test case for crazy random sword
+    weapon = WeaponFactory::getInstance()->getWeapon("crazySword");
+    simulateWeapon(weapon, armor);
+    delete(weapon);
+
+    //test case for lucky gauntlet
+    weapon = WeaponFactory::getInstance()->getWeapon("gauntlet");
+    simulateWeapon(weapon, armor);
+    delete(weapon);
+
+
+
+
+
     return 0;
 }
 
