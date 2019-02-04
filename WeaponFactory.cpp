@@ -8,8 +8,11 @@
 #include <stddef.h>
 #include <stdlib.h>
 #include "WeaponFactory.h"
-#include "CommonSword.h" 
+#include "CommonSword.h"
 #include "CommonSpear.h"
+#include "SimpleHammer.h"
+#include "CrazyRandomSword.h"
+#include "LuckyGauntlet.h"
 
 WeaponFactory* WeaponFactory::instance = NULL;
 
