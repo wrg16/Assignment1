@@ -1,4 +1,4 @@
-a) $ git push
+3) a) $ git push
 Enumerating objects: 11, done.
 Counting objects: 100% (10/10), done.
 Delta compression using up to 8 threads
@@ -65,3 +65,28 @@ the larger amount of developers because certain 'lieutenants' wouldn't have to h
 and pulls to all 100 developers. Instead, each 'lieutenant' would handle only a handful of the developers,
 then push those complete changes to the dictator. There, the dictator would have a more complete, and 
 bug-free, mass of code to merge and push to the central repository.
+
+
+5)	First, I will discuss how the prototype uses encapsulation. This is actually very clear to see, once it
+is realized what how the objects for these weapons are created for this assignment: in classes. Like previously
+stated, encapsulation is simply the object-oriented programming idea of holding variables and functions within
+a single, created object: a class. The examples in the prototype are immediately those of the weapons. The
+common sword, common spear, simple hammer, crazy random sword, and lucky gauntlet are all classes that exemplify
+the idea behind encapsulation. Each class holds specific functions designed for their respective class prposes.
+If more detail about this is required, a specific function of each class is called the "hit" function, inside
+the classes. However, if more explanation is required, there is a parent to each of these classes called
+Weapon. This is probably a better example because instead of only having functions, there are also
+variables within the said Weapon class. Lastly, there is also the WeaponFactory class. Although it is not
+a parent or child of any class, it also holds both functions and variables; it fits the more typical
+example of encapsulation.
+	Next, I will discuss if polymorphism exists within the prototype, because I believe it is. And I will
+explain where. If there is any place to find polymorphism, it is within situations of inheritance, and such
+is the case in this prototype; specifically, you can find it in the relationship between the parent class
+Weapon and its five child classes. To reiterate from before, polymorphism is the ability of a function to
+perform differently depending on the data type of the caller. In the code of this prototype, such conditions
+are met in the "hit" function based within the Weapon class. As being the parent class, its children inherit
+the ability to use such a function as well. But, not only do its child classes use the function, they each have
+their own "hit" function. Because the Weapon class function is virtual, this means when the hit function is called
+for the weapon class, the actual use of the function changes depending on which child caller it is. This is a prime
+example of polymorphism because this same function in the Weapon class has different definitions for each of its
+child classes. Additionally, but personally not as exemplary, there is the destructor for such classes as well.
